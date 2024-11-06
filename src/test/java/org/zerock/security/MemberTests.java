@@ -44,13 +44,13 @@ public class MemberTests {
 				
 				if(i < 80) {
 					pstmt.setString(1, "user"+i);
-					pstmt.setString(3, "ÀÏ¹İ»ç¿ëÀÚ"+i);
+					pstmt.setString(3, "ì¼ë°˜ì‚¬ìš©ì"+i);
 				}	else if(i < 90) {
 					pstmt.setString(1, "manager"+i);
-					pstmt.setString(3, "¿î¿µÀÚ"+i);
+					pstmt.setString(3, "ìš´ì˜ì"+i);
 				}	else {
 					pstmt.setString(1, "admin"+i);
-					pstmt.setString(3, "°ü¸®ÀÚ"+i);
+					pstmt.setString(3, "ê´€ë¦¬ì"+i);
 				}
 				
 				pstmt.executeUpdate();
